@@ -12,7 +12,7 @@ The RF mimics the behaviour of an experienced professional by assessing the pote
 
 Note: This is a POC that utilizes public blacklists and the most used websites (worldwide). If an URL you condemn harmful (e.g. NSF) is not recognized as malicious by the RF-mode, it is because these kinds of websites are not thouroughly included in most blacklists. If you want to add these websites to the detection capabilities of this project, you need to train the RF-model on corresponding dataset.
 
-For a detailed explanation visit: <a href="https://www.researchgate.net/publication/358724855_Einsatz_von_Machine_Learning_bei_der_Abwehr_webbasierter_Angriffe_am_Beispiel_von_URL-Blacklists?_sg%5B0%5D=Timssc4_IIlX6huQAxeKebLMRiCKKP1eiAQbfi6vcIkAAHaIbxNRKRn334OFApuZFwk7uKI4ofhFqL_5MSFVTdTTcZv952D3iHuv-R0C.6ePV4xMZ8RX1Q0xk-fuMdB_xm_nqaSvdRvV9pRBUokJ_tFKiGf9Euqtfekhc9TMDMUvr1zwBgeZ7TUd5Hmc6xw">https://www.researchgate.net/publication/...</a>
+For a detailed explanation visit: <a href="https://www.researchgate.net/publication/358724855_Einsatz_von_Machine_Learning_bei_der_Abwehr_webbasierter_Angriffe_am_Beispiel_von_URL-Blacklists?_sg%5B0%5D=vNkaptj7pDHU9IAFnfN73Yi7FbswlAYWHBVQ19OLFJ9MJOf_udOjXJsWPW1pvV3JsPqhIi6xAfN5zXyT-7H4vSDvIos1bEIuCpav-hWp.rLzq3UcQH7-LHKD1YL4bcmEvEd-tC8rIdLLc46-cqTMzaCOQxE8IuEkyS6qwLo4YsVV2WP4PMCV_b6uBDu50sg">https://www.researchgate.net/publication/...</a>
 
 ## Key-Features
 - Trained on 500.000 URLs
