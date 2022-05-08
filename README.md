@@ -30,7 +30,7 @@ Open http://localhost:5000 and the app should appear.
 
 Screenshot:
 <p align="center">
-  ![ScreenShot](screenshot1.jpeg)
+  <img src="https://github.com/henningstud/mimic_url_classifier/blob/main/screenshot1.jpeg">
 </p>
 
 ## My publication for this project
