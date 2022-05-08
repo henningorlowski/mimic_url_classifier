@@ -1,4 +1,4 @@
-# Mimicry
+# Mimicry_
 ## A ML-app that detects malicious URL addresses by mimicking the language expertise of humans. Deployed API with Flask and Docker. Frontend Jquery.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
