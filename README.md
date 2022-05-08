@@ -10,7 +10,7 @@ Screenshot:
 
 The RF mimics the behaviour of an experienced professional by assessing the potential threat of the URL simply by evaluating its language. Each time another char of the URL is being typed in the field above an AJAX-call is sent to a Flask-API, which governs the trained RF.
 
-Note: This is a POC that utilizes public blacklists and the most used websites (worldwide). If an URL you condemn harmful (e.g. NSFW) is not recognized as malicious by the RF-mode, it is because these kinds of websites are not thouroughly included in most blacklists. If you want to add these websites to the detection capabilities of this project, you need to train the RF-model on corresponding dataset.
+Note: This is a POC that utilizes public blacklists and the most used websites (worldwide). If an URL you condemn harmful (e.g. NSFW) is not recognized as malicious by the RF-mode, it is because these kinds of websites are not thouroughly included in most blacklists. If you want to add these websites to the detection capabilities of this project, you need to train the RF-model on a corresponding dataset.
 
 For a detailed explanation visit: https://www.researchgate.net/publication/358724855_Einsatz_von_Machine_Learning_bei_der_Abwehr_webbasierter_Angriffe_am_Beispiel_von_URL-Blacklists
 
