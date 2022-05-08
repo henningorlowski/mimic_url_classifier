@@ -24,7 +24,7 @@ For a detailed explanation visit: <a href="https://www.researchgate.net/publicat
 
 ```shell
 # 1. First, clone the repo
-$ git clone https://github.com/henningstud/mimicry
+$ git clone https://github.com/henningstud/mimic_url_classifier.git
 $ cd mimicry
 # 2. Build Docker image
 $ docker build -t mimicry .
