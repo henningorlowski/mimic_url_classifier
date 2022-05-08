@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block content %}
+
+<nav>
+  <!-- Potential NAV-Area -->
+</nav>
+<section class="section-1">
+  <img src="/static/images/logo.svg" class="logo">
+
+  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  <form>
+   
+    <div class="s-box">
+      <input id="s-input-field" type="text" class="s-input" placeholder="Enter your URL">
+    </div>
+  </form>
+  <div class="results_placeholder">There is no valid URL yet, e.g.: pool.bitcoin.ml (malicious) or google.de (ok)</div>
+  <div class="results">
+    The URL is classified as <div id="result_area">unknown</div>
+    with a confidence of <div id="result_prob">100</div>%.
+  </div>
+  
+</section>
+
+<section class="section-2">
+  <h2>Description</h2>
+  <p>The URL is processed by using N-Gram vectorization and the classification of a Random Forest algorithm (short: RF), that has been trained on 500.000 Sample-URLs with 250.000 malicious blacklisted URLs and 250.000 of the most visited URLs worldwide.</p>
+  <p>The RF mimics the behaviour of an experienced professional by assessing the potential threat of the URL simply by evaluating its language. Each time another char of the URL is being typed in the field above an AJAX-call is sent to a Flask-API, which governs the trained RF.</p>		  
+  <p>Note: This is a POC. The ground truth for this project are public blacklists. If a website you might condemn harmful (e.g. NSFW) but the RF still doesn't classify it as malicious, it is because it hasn't been condemned by blacklist companies as harmful. If you want to include certain URLs as additional malicious subjects, you need to train the RF-model on such a dataset.</p>
+  <p>For a detailed explanation visit: <a href="https://www.researchgate.net/publication/358724855_Einsatz_von_Machine_Learning_bei_der_Abwehr_webbasierter_Angriffe_am_Beispiel_von_URL-Blacklists?_sg%5B0%5D=Timssc4_IIlX6huQAxeKebLMRiCKKP1eiAQbfi6vcIkAAHaIbxNRKRn334OFApuZFwk7uKI4ofhFqL_5MSFVTdTTcZv952D3iHuv-R0C.6ePV4xMZ8RX1Q0xk-fuMdB_xm_nqaSvdRvV9pRBUokJ_tFKiGf9Euqtfekhc9TMDMUvr1zwBgeZ7TUd5Hmc6xw">https://www.researchgate.net/publication/...</a>
+    <br>The corresponding code can be found at: <a href="">github.com/...</a></p>
+  <img src="/static/images/abbildung_6_2.png" class="descriptive_img">
+  <p class="img_description">Wordcloud of the malicious URLs, on which the RF-classifier has been trained on.</p>
+
+  <p>The URL is processed by using N-Gram Vectorization and the classification of a trained Random Forest algorithm, that has been trained on 500.000 Sample-URLs with 250.000 malicious blacklisted URLs and 250.000 of the most used URLs worldwide.</p>
+</section>
+<footer>
+  <!-- Potential Footer-Area -->
+  MIT License Henning Orlowski 2022
+</footer>
+
+
+{% endblock %}
