@@ -1,7 +1,7 @@
 #Flask Server and Request-utilities
 from flask import Flask, jsonify, request, render_template, redirect, url_for
 #Custom Pipeline functions
-from utils.util import filter_numbers, vectorize, model_predict
+from utils.pipeline import filter_numbers, vectorize, model_predict
 #Used ML-Classifier
 from sklearn.ensemble import RandomForestClassifier 
 #Pickle to import model

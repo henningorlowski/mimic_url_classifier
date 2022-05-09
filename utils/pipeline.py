@@ -1,12 +1,14 @@
 from sklearn.feature_extraction.text import CountVectorizer
 import pickle as cPickle
+from pathlib import Path
+parent = Path(__file__).resolve().parents[1]
 
 #load url_preprocessing_pipeline
-with open('assets/vectorizer_60percent', 'rb') as f:
+with open(parent / 'assets/vectorizer_60percent', 'rb') as f:
 	vectorizer=cPickle.load(f)
 
 #load model
-with open('assets/rf_classifier_60percent', 'rb') as fid:
+with open(parent / 'assets/rf_classifier_60percent', 'rb') as fid:
 	model = cPickle.load(fid)
 
 #Load Pipeline and ML-Model and use it on the given URL. 
