@@ -3,24 +3,26 @@
 <nav>
   <!-- Potential NAV-Area -->
 </nav>
+  <!-- Interactive Section -->
 <section class="section-1">
   <img src="/static/images/logo.svg" class="logo">
-
+  <!-- Loading Screen -->
   <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  <!-- URL Form -->
   <form>
-   
     <div class="s-box">
       <input id="s-input-field" type="text" class="s-input" placeholder="Enter your URL">
     </div>
   </form>
+  <!-- ML-Model results -->
   <div class="results_placeholder">There is no valid URL yet, e.g.: pool.bitcoin.ml (malicious) or google.de (ok)</div>
   <div class="results">
     The URL is classified as <div id="result_area">unknown</div>
     with a confidence of <div id="result_prob">100</div>%.
   </div>
-  
 </section>
 
+  <!-- Descriptions -->
 <section class="section-2">
   <h2>Description</h2>
   <p>The URL is processed by using N-Gram vectorization and the classification of a Random Forest algorithm (short: RF), that has been trained on 500.000 Sample-URLs with 250.000 malicious blacklisted URLs and 250.000 of the most visited URLs worldwide.</p>
@@ -30,13 +32,12 @@
     <br>The corresponding code can be found at: <a href="">github.com/...</a></p>
   <img src="/static/images/abbildung_6_2.png" class="descriptive_img">
   <p class="img_description">Wordcloud of the malicious URLs, on which the RF-classifier has been trained on.</p>
-
   <p>The URL is processed by using N-Gram Vectorization and the classification of a trained Random Forest algorithm, that has been trained on 500.000 Sample-URLs with 250.000 malicious blacklisted URLs and 250.000 of the most used URLs worldwide.</p>
 </section>
+
+<!-- Potential Footer-Area -->
 <footer>
-  <!-- Potential Footer-Area -->
   MIT License Henning Orlowski 2022
 </footer>
-
 
 {% endblock %}
