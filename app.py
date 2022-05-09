@@ -24,7 +24,7 @@ def predict():
 		url = [request.json['url']]
 		
 		# Make prediction
-		pred, prob = model_predict(url, model)
+		pred, prob = model_predict(url)
 
 		# Serialize the result and the probabilities for the two classes "malicious" and "normal". The probabilities are multiplied by 100 for improved readability.
 		return jsonify({"prediction":str(pred[0]), "probability_malicious":str(round(prob[0][0]*100)), "probability_normal":str(round(prob[0][1]*100))})

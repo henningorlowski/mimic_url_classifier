@@ -4,15 +4,15 @@ from pathlib import Path
 parent = Path(__file__).resolve().parents[1]
 
 #load url_preprocessing_pipeline
-with open(parent / 'assets/vectorizer_60percent', 'rb') as f:
+with open('assets/vectorizer_60percent', 'rb') as f:
 	vectorizer=cPickle.load(f)
 
 #load model
-with open(parent / 'assets/rf_classifier_60percent', 'rb') as fid:
+with open('assets/rf_classifier_60percent', 'rb') as fid:
 	model = cPickle.load(fid)
 
 #Load Pipeline and ML-Model and use it on the given URL. 
-def model_predict(url, model):
+def model_predict(url):
 	#All numbers become 1 as a simplified NLP-Feature
 	url = filter_numbers(url)
 
