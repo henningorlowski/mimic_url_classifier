@@ -5,7 +5,7 @@
 
 Screenshot:
 <p align="center">
-  <img src="https://github.com/henningorlowski/mimic_url_classifier/blob/main/screenshot1.jpeg" style="height:250px;">
+  <img src="https://github.com/henningorlowski/mimic_url_classifier/blob/main//static/images/screenshot1.jpeg" style="height:250px;">
 </p>
 
 The RF mimics the behaviour of an experienced professional by assessing the potential threat of the URL simply by evaluating its language. Each time another char of the URL is being typed in the field above an AJAX-call is sent to a Flask-API, which governs the trained RF.
