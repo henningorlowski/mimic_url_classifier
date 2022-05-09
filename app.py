@@ -1,7 +1,7 @@
 #Flask Server and Request-utilities
 from flask import Flask, jsonify, request, render_template, redirect, url_for
 #Custom Pipeline functions
-from utils.util import filter_numbers, vectorize
+from utils.util import filter_numbers, vectorize, model_predict
 #Used ML-Classifier
 from sklearn.ensemble import RandomForestClassifier 
 #Pickle to import model
@@ -9,27 +9,8 @@ import pickle as cPickle
 #waitress server for deployment
 from waitress import serve
 
-################Start#################
+#Start Flask Server
 app = Flask(__name__)
-
-#load model
-with open('assets/rf_classifier_60percent', 'rb') as fid:
-	model = cPickle.load(fid)
-
-#Load Pipeline and ML-Model and use it on the given URL. 
-def model_predict(url, model):
-	#All numbers become 1 as a simplified NLP-Feature
-	url = filter_numbers(url)
-
-	#N-Gram Vectorization with given vectorizer
-	url_vec = vectorize(url)
-
-	#prediction of classes "malicios" or "normal"
-	pred = model.predict(url_vec)
-
-	#get prediction_confidence / probability for each class
-	pred_prob = model.predict_proba(url_vec)
-	return pred, pred_prob
 
 @app.route('/')
 def index():

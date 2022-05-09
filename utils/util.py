@@ -5,6 +5,25 @@ import pickle as cPickle
 with open('assets/vectorizer_60percent', 'rb') as f:
 	vectorizer=cPickle.load(f)
 
+#load model
+with open('assets/rf_classifier_60percent', 'rb') as fid:
+	model = cPickle.load(fid)
+
+#Load Pipeline and ML-Model and use it on the given URL. 
+def model_predict(url, model):
+	#All numbers become 1 as a simplified NLP-Feature
+	url = filter_numbers(url)
+
+	#N-Gram Vectorization with given vectorizer
+	url_vec = vectorize(url)
+
+	#prediction of classes "malicios" or "normal"
+	pred = model.predict(url_vec)
+
+	#get prediction_confidence / probability for each class
+	pred_prob = model.predict_proba(url_vec)
+	return pred, pred_prob
+
 #simplify digits within the url
 def filter_numbers(data):
 	data = [item.replace('0', '1') for item in data]
