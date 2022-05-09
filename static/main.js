@@ -1,6 +1,7 @@
 //When the app is loaded. Click once onto the URL input field, to visualize the interactive part for the user.
 $( document ).ready(function() {
   $('#s-input-field').trigger("click");
+  $('#s-input-field').focus();
 });
 
 //Action-Listener. If something has been entered in the URL_input box, than return a prediction "malicious" or "not".
