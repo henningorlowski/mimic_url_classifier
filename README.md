@@ -5,7 +5,7 @@
 
 Screenshot:
 <p align="center">
-  <img src="https://github.com/henningorlowski/mimic_url_classifier/blob/main/screenshot1.jpeg" style="height:250px;">
+  <img src="https://github.com/henningorlowski/mimic_url_classifier/blob/main//static/images/screenshot1.jpeg" style="height:250px;">
 </p>
 
 The RF mimics the behaviour of an experienced professional by assessing the potential threat of the URL simply by evaluating its language. Each time another char of the URL is being typed in the field above an AJAX-call is sent to a Flask-API, which governs the trained RF.
@@ -24,12 +24,12 @@ For a detailed explanation visit: https://www.researchgate.net/publication/35872
 
 ```shell
 # 1. First, clone the repo
-$ git clone https://github.com/henningorlowski/mimic_url_classifier.git
-$ cd mimic_url_classifier
+git clone https://github.com/henningorlowski/mimic_url_classifier.git
+cd mimic_url_classifier
 # 2. Build Docker image
-$ docker build -t mimicry .
+docker build -t mimicry .
 # 3. Run
-$ docker run -it --rm -p 5000:5000 mimicry
+docker run -it --rm -p 5000:5000 mimicry
 ```
 Open http://localhost:5000 and the app should appear.
 
