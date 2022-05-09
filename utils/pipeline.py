@@ -1,7 +1,5 @@
 from sklearn.feature_extraction.text import CountVectorizer
 import pickle as cPickle
-from pathlib import Path
-parent = Path(__file__).resolve().parents[1]
 
 #load url_preprocessing_pipeline
 with open('assets/vectorizer_60percent', 'rb') as f:
