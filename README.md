@@ -29,7 +29,7 @@ cd mimic_url_classifier
 # 2. Build Docker image
 docker build -t mimicry .
 # 3. Run
-$ docker run -it --rm -p 5000:5000 mimicry
+docker run -it --rm -p 5000:5000 mimicry
 ```
 Open http://localhost:5000 and the app should appear.
 
