@@ -33,6 +33,14 @@ docker run -it --rm -p 5000:5000 mimicry
 ```
 Open http://localhost:5000 and the app should appear.
 
+Alternatively test from CLI
+```shell
+curl -X POST localhost:5000/prediction -H 'Content-Type: application/json' -d '{"url":"google.de"}'
+```
+which should lead to the response:
+{"prediction":"1","probability_malicious":"0","probability_normal":"100"}
+The prediction 1 represents the classifcation as a normal URL. The prediction 0 represents a malicious classification.
+
 ## My publication for this project
 
 [Application of machine learning for the defense against web-based attacks by example of DNS-Blacklists](https://www.researchgate.net/publication/358724855_Einsatz_von_Machine_Learning_bei_der_Abwehr_webbasierter_Angriffe_am_Beispiel_von_URL-Blacklists)
