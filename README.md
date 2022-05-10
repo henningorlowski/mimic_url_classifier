@@ -33,11 +33,12 @@ docker run -it --rm -p 5000:5000 mimicry
 ```
 Open http://localhost:5000 and the app should appear.
 
+
 Alternatively test from CLI
 ```shell
 curl -X POST localhost:5000/prediction -H 'Content-Type: application/json' -d '{"url":"google.de"}'
 ```
-which should lead to the response:
+Which should lead to the response:
 {"prediction":"1","probability_malicious":"0","probability_normal":"100"}
 The prediction 1 represents the classifcation as a normal URL. The prediction 0 represents a malicious classification.
 
