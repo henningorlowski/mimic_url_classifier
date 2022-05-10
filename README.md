@@ -34,7 +34,7 @@ docker run -it --rm -p 5000:5000 mimicry
 Open http://localhost:5000 and the app should appear.
 
 
-Alternatively test from CLI
+## Test API from CLI
 ```shell
 curl -X POST localhost:5000/prediction -H 'Content-Type: application/json' -d '{"url":"google.de"}'
 ```
