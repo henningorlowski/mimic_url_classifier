@@ -46,6 +46,7 @@ Alternatively run all Unittests
 ```shell
 python app_test.py
 ```
+100% Test coverage should respond with "ok" for everything
 
 ## ToDo
 - Selenium FrontEnd Test
