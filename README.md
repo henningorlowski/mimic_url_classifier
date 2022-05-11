@@ -41,6 +41,6 @@ curl -X POST localhost:5000/prediction -H 'Content-Type: application/json' -d '{
 Which should lead to the response:
 {"prediction":"secure","probability_malicious":"0","probability_normal":"100"}
 
-## My publication for this project
+## Publication for this project
 
 [Application of machine learning for the defense against web-based attacks by example of DNS-Blacklists](https://www.researchgate.net/publication/358724855_Einsatz_von_Machine_Learning_bei_der_Abwehr_webbasierter_Angriffe_am_Beispiel_von_URL-Blacklists)
