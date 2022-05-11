@@ -49,7 +49,7 @@ python app_test.py
 
 
 ## ToDo
-- Selenium FrontEnd Test
+- Add Selenium Frontend test to unittests
 - Add support for protocol validation (HTTP, HTTPS), GET-Requests
 
 ## Publication for this project
