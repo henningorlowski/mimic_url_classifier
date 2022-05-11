@@ -33,6 +33,14 @@ docker run -it --rm -p 5000:5000 mimicry
 ```
 Open http://localhost:5000 and the app should appear.
 
-## My publication for this project
+
+## Test API from CLI
+```shell
+curl -X POST localhost:5000/prediction -H 'Content-Type: application/json' -d '{"url":"google.de"}'
+```
+Which should lead to the response:
+{"prediction":"secure","probability_malicious":"0","probability_normal":"100"}
+
+## Publication for this project
 
 [Application of machine learning for the defense against web-based attacks by example of DNS-Blacklists](https://www.researchgate.net/publication/358724855_Einsatz_von_Machine_Learning_bei_der_Abwehr_webbasierter_Angriffe_am_Beispiel_von_URL-Blacklists)
