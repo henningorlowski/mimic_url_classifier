@@ -19,6 +19,7 @@ For a detailed explanation visit: https://www.researchgate.net/publication/35872
 - Classification-Accuracy of up to 92% (malicious or normal): Backtested in multiple scenarios against a classical blacklist
 - Novel approach to detect malicious URLs
 - Design, Training and Test completely documented in a publication (see below)
+- Fully Unittested
 
 ## Quick Start with **[Docker](https://www.docker.com)**
 
@@ -40,6 +41,10 @@ curl -X POST localhost:5000/prediction -H 'Content-Type: application/json' -d '{
 ```
 Which should lead to the response:
 {"prediction":"secure","probability_malicious":"0","probability_normal":"100"}
+
+## ToDo
+- Selenium FrontEnd Test
+- Add support for protocol validation (HTTP, HTTPS), GET-Requests
 
 ## Publication for this project
 
