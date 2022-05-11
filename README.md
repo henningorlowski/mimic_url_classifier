@@ -42,11 +42,11 @@ curl -X POST localhost:5000/prediction -H 'Content-Type: application/json' -d '{
 Which should lead to the response:
 {"prediction":"secure","probability_malicious":"0","probability_normal":"100"}
 <br /><br />
-Alternatively run all Unittests
+Alternatively run all Unittests (100% coverage)
 ```shell
 python app_test.py
 ```
-100% Test coverage should respond with "ok" for everything
+
 
 ## ToDo
 - Selenium FrontEnd Test
