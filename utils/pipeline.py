@@ -25,6 +25,9 @@ def model_predict(url):
 	#prediction of classes "malicios" or "normal"
 	pred = model.predict(url_vec)
 
+	#prediction of classes "malicious" or "normal"
+	pred = model.predict(url_vec)[0]
+	
 	#get prediction_confidence / probability for each class
 	pred_prob = model.predict_proba(url_vec)
 	return pred, pred_prob
