@@ -16,7 +16,7 @@ For a detailed explanation visit: https://www.researchgate.net/publication/35872
 
 ## Key-Features
 - Trained on 500.000 URLs
-- Classification-Accuracy of up to 96% (malicious or normal): Backtested in multiple scenarios against a classical blacklist
+- Classification-Accuracy of up to 92% (malicious or normal): Backtested in multiple scenarios against a classical blacklist
 - Novel approach to detect malicious URLs
 - Design, Training and Test completely documented in a publication (see below)
 

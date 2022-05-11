@@ -11,10 +11,15 @@ with open('assets/rf_classifier_60percent', 'rb') as fid:
 
 #Load Pipeline and ML-Model and use it on the given URL. 
 def model_predict(url):
+
+	if not isinstance(url,list):
+		url = [url]
+
 	#All numbers become 1 as a simplified NLP-Feature
 	url = filter_numbers(url)
 
 	#N-Gram Vectorization with given vectorizer
+	#N-Gram Vectorization with trained vectorizer
 	url_vec = vectorize(url)
 
 	#prediction of classes "malicios" or "normal"
@@ -39,5 +44,8 @@ def filter_numbers(data):
 
 #apply count-vectorizer for url
 def vectorize(url):
+	if not isinstance(url,list):
+		url = [url]
+
 	url_vec = vectorizer.transform(url)
 	return url_vec
