@@ -37,11 +37,9 @@ $('#s-input-field').keyup(function(){
         let result_str = "";
         
         //Classified as normal URL
-        if(data["prediction"] == "1"){
         if(data["prediction"] == "secure"){
           result_str = 'secure';
         }
-        else if(data["prediction"] == "0"){ //classified as malicious URL
         else if(data["prediction"] == "malicious"){ //classified as malicious URL
           result_str = "malicious";
         }

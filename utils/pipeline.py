@@ -18,18 +18,14 @@ def model_predict(url):
 	#All numbers become 1 as a simplified NLP-Feature
 	url = filter_numbers(url)
 
-	#N-Gram Vectorization with given vectorizer
 	#N-Gram Vectorization with trained vectorizer
 	url_vec = vectorize(url)
-
-	#prediction of classes "malicios" or "normal"
-	pred = model.predict(url_vec)
 
 	#prediction of classes "malicious" or "normal"
 	pred = model.predict(url_vec)[0]
 	
 	#get prediction_confidence / probability for each class
-	pred_prob = model.predict_proba(url_vec)
+	pred_prob = model.predict_proba(url_vec)[0]
 	return pred, pred_prob
 
 #simplify digits within the url

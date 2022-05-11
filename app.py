@@ -27,8 +27,6 @@ def predict():
 		pred, prob = model_predict(url)
 		pred_str = "secure" if pred == 1 else "malicious"
 
-		# Serialize the result and the probabilities for the two classes "malicious" and "normal". The probabilities are multiplied by 100 for improved readability.
-		return jsonify({"prediction":str(pred[0]), "probability_malicious":str(round(prob[0][0]*100)), "probability_normal":str(round(prob[0][1]*100))})
 		# Serialize the result and the probabilities for the two classes "malicious" and "normal". The probabilities are multiplied by 100 to match the % notation
 		# which simplifies the readability.
 		return jsonify({"prediction":pred_str, "probability_malicious":str(round(prob[0]*100)), "probability_normal":str(round(prob[1]*100))})
