@@ -50,6 +50,7 @@ python app_test.py
 
 ## ToDo
 - Add Selenium Frontend test to unittests
+- Implement Anomaly Detection (Source Code <-> WebsiteRendering) with CNN
 - Add support for protocol validation (HTTP, HTTPS), GET-Requests
 
 ## Publication for this project
