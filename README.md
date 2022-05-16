@@ -3,7 +3,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
-Screenshot:
 <p align="center">
   <img src="https://github.com/henningorlowski/mimic_url_classifier/blob/main//static/images/logo.svg" style="height:250px;">
 </p>
