@@ -1,12 +1,7 @@
-#Flask Server and Request-utilities
 from flask import Flask, jsonify, request, render_template, redirect, url_for
-#Custom Pipeline functions
 from utils.pipeline import filter_numbers, vectorize, model_predict
-#Used ML-Classifier
 from sklearn.ensemble import RandomForestClassifier 
-#Pickle to import model
 import pickle as cPickle
-#waitress server for deployment
 from waitress import serve
 
 #Start Flask Server
