@@ -33,6 +33,17 @@ docker run -it --rm -p 5000:5000 mimicry
 ```
 Open http://localhost:5000 and the app should appear.
 
+## Quick Start with **[Docker-Compose](https://www.docker.com)**
+
+```shell
+# 1. First, clone the repo
+git clone https://github.com/henningorlowski/mimic_url_classifier.git
+cd mimic_url_classifier
+# 2. Build and run docker image
+docker-compose up
+
+```
+Open http://localhost:5000 and the app should appear.
 
 ## Test API from CLI
 ```shell

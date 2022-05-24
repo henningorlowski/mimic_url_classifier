@@ -35,10 +35,7 @@ def predict():
 		return e
 
 if __name__ == "__main__":
-	
 	print("Waitress started.. App running.")
 	#run WSGI deployment server. Listen @port 5000
 	serve(app, host='0.0.0.0', port=5000)
-	
-	#development_server
-	#app.run(host='0.0.0.0')
+	print("App closed.")
