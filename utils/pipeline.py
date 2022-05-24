@@ -28,7 +28,7 @@ def model_predict(url):
 	pred_prob = model.predict_proba(url_vec)[0]
 	return pred, pred_prob
 
-#simplify digits within the url
+#simplify digits within the url: [0+9] is returned as 1
 def filter_numbers(data):
 	data = [item.replace('0', '1') for item in data]
 	data = [item.replace('2', '1') for item in data]
