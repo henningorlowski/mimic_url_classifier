@@ -54,7 +54,7 @@ Which should lead to the response:
 <br /><br />
 Alternatively run all Unittests (100% coverage)
 ```shell
-python app_test.py
+python -m unittest discover -v
 ```
 
 
